@@ -1,8 +1,8 @@
 .TH man 1 "10 Oct 2020" "1.0" "bodhi-update man page"
 .SH NAME
-rdum \- shows update notification in systray
+bodhi-update \- shows update notification in systray
 .SH SYNOPSIS
-rdum
+bodhi-update
 .SH DESCRIPTION
 bodhi-update adds an icon to the system tray on a FreeDesktop compliant desktop. The icon shows whether updates are available and if any are security updates. Right clicking on the icon shows a menu allowing further control.
 .SH OPTIONS

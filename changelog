@@ -1,5 +1,6 @@
-rdum (0.1) unstable; urgency=medium
+bodhi-update (0.1) unstable; urgency=medium
+  * Forked
+-- Gareth Williams <hippytaff@bodhilinux.com> Thu, 12 Jan 2023 20:30:00 +0000
 
   * Initial release
-
  -- Brian Walton <brian@riban.co.uk>  Wed, 28 Oct 2020 10:00:00 +0000
