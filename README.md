@@ -1,6 +1,6 @@
-# rdum
+# Bodhi-Update
 
-riban dpkg update monitor
+Bodhi-Update is a fork of rdum - riban's dpkg update monitor
 
 This simple shell script provides an indication of available updates on a dpkg / apt system. It shows status with an icon in the system tray which indicates if any updates are available and whether any are security updates. The system tray icon tooltip shows how many updates are available.
 
@@ -17,14 +17,10 @@ The icon refreshes its status every 10 minutes but depends on a background task 
 
 Depends on:
 * yad - Provides the system tray interface
-* xterm - Displays apt commands
+* terminology - Displays apt commands
 * awk - Decoding, etc.
 * bash - This is a bash script
 * apt - Get update status
 * apt-get - Performs updates and upgrades
 
-This is a simple implementation of the version of the update notifier that I feel was optimal. As a desktop / GUI user I want to know when updates are available, what type of update they are (security / normal) and be able to simply install the updates. I also want to be able to review the list of available updates. There are other update notifiers available but this script uses very few resources with few dependencies. I was inspired to write this because there isn't an update notifier installed by default on Bodhi Linux (a great, lightweight gnu/linux distrubution) and some users were asking for a GUI method of performing updates.
 
-I would prefer to remove the xterm dependency but for now it serves a purpose.
-
-I have added this to `~/.e/e/applications/startup/startupcommands` on my Bodhi Linux laptop and that works but it may be better to package this as an application that distros understand. I have added a .deb package to the reporitory.
