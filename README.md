@@ -17,7 +17,7 @@ The icon refreshes its status every 10 minutes but depends on a background task 
 
 Depends on:
 * yad - Provides the system tray interface
-* terminology - Displays apt commands
+* xterm - Displays apt commands
 * awk - Decoding, etc.
 * bash - This is a bash script
 * apt - Get update status
