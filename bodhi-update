@@ -13,6 +13,7 @@ VERSION=0.3
 REFRESH_PERIOD=600
 
 #TODO Use better icons
+# Fix toggle Hide/Show
 ICON_SECURITY=software-update-urgent
 ICON_NORMAL=software-update-available
 ICON_NOUPDATES=dialog-info
