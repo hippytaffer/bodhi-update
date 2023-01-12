@@ -1,7 +1,7 @@
 #!/bin/sh
 # Script to build .deb package
 
-PACKAGE=rdum
+PACKAGE=bodhi-update
 
 if [ $# -gt 0 ]
 then
