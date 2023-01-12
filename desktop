@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Update Notifier
-GenericName=Update Notifier
+Name=Bodhi-Update
+GenericName=Bodhi-Update
 Comment=Systray update notification
 Icon=update-manager
 Exec=bodhi-update
