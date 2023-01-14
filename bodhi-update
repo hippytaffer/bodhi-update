@@ -13,7 +13,7 @@ VERSION=0.3
 REFRESH_PERIOD=600
 
 #TODO
-#Fix toggle Hide/Show
+
 ICON_SECURITY=software-update-urgent
 ICON_NORMAL=software-update-available
 ICON_NOUPDATES=dialog-information
@@ -22,7 +22,6 @@ ICON_REBOOT=reboot-notifier
 MENU_TEMPLATE="Refresh status!echo refresh|About!echo about|Quit!echo quit"
 MENU_SHOW_NOUPDATE="Hide when no updates available!echo toggle_show"
 SHOW_NOUPDATES=1
-#rm -rf ~/.config/bodhi-update.conf
 #if [ -f ~/.config/bodhi-update.conf ]
 #then
 #  SHOW_NOUPDATES=0
