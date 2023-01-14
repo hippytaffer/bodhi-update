@@ -22,10 +22,7 @@ ICON_REBOOT=reboot-notifier
 MENU_TEMPLATE="Refresh status!echo refresh|About!echo about|Quit!echo quit"
 MENU_SHOW_NOUPDATE="Hide when no updates available!echo toggle_show"
 SHOW_NOUPDATES=1
-#if [ -f ~/.config/bodhi-update.conf ]
-#then
-#  SHOW_NOUPDATES=0
-#fi
+
 
 # Try to stop any existing running instances
 # Actually want to signal to existing instance to show icon so that config can be performed
@@ -145,18 +142,9 @@ do
 	elif [ " $command " == " about " ]
 	then
 	    yad --title "About..." --center --button=Close --text "Bodhi-Update\n\nVersion: $VERSION\nCopyright: hippytaff (2023)\nMaintainer: Gareth Williams"
-    elif [ " $command " == " toggle_show " ] # Fix before enabling - When Hide selected can not select show and doesn't show when updates available.
+    elif [ " $command " == " toggle_show " ]
     then
-		if [ $SHOW_NOUPDATES -eq 1 ]
-		then
-
-			SHOW_NOUPDATES=0
-			MENU_SHOW_NOUPDATE="Show when no updates available!echo toggle_show"
-			touch ~/.config/bodhi-update.conf
-		else
-			SHOW_NOUPDATES=1
-			MENU_SHOW_NOUPDATE="Hide when no updates available!echo toggle_show"
-			rm -rf ~/.config/bodhi-update.conf
-		fi
+        SHOW_NOUPDATES=0
+        touch ~/.config/bodhi-update.conf
     fi
 done
