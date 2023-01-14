@@ -141,7 +141,7 @@ do
 		reboot
 	elif [ " $command " == " about " ]
 	then
-	    yad --title "About..." --center --button=Close --text "Bodhi-Update\n\nVersion: $VERSION\nCopyright: hippytaff (2023)\nMaintainer: Gareth Williams"
+	    yad --title "About..." --center --button=Close --text "Bodhi-Update\n\nVersion: $VERSION\nAuthor: Riban\nCopyright: hippytaff (2023)\nMaintainer: Hippytaff"
     elif [ " $command " == " toggle_show " ]
     then
         SHOW_NOUPDATES=0
