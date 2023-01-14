@@ -119,7 +119,7 @@ do
         echo "tooltip:Checking for updates..." >&3
         echo "icon:$ICON_REFRESHING" >&3
 	terminology -e pkexec apt update
-        if [ $? -eq 0 ]
+        if [ ! $total -gt 1 ]
         then
             yad --title "Bodhi Update" --text "No updates available" --center --height 80 --width 225 --window-icon=system_section --button=Ok
         fi
