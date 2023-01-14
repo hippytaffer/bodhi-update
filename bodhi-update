@@ -22,11 +22,11 @@ ICON_REBOOT=reboot-notifier
 MENU_TEMPLATE="Refresh status!echo refresh|About!echo about|Quit!echo quit"
 MENU_SHOW_NOUPDATE="Hide when no updates available!echo toggle_show"
 SHOW_NOUPDATES=1
-rm -rf ~/.config/bodhi-update.conf
-if [ -f ~/.config/bodhi-update.conf ]
-then
-  SHOW_NOUPDATES=0
-fi
+#rm -rf ~/.config/bodhi-update.conf
+#if [ -f ~/.config/bodhi-update.conf ]
+#then
+#  SHOW_NOUPDATES=0
+#fi
 
 # Try to stop any existing running instances
 # Actually want to signal to existing instance to show icon so that config can be performed
