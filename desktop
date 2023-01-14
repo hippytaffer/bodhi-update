@@ -2,7 +2,7 @@
 Name=Bodhi-Update
 GenericName=Bodhi-Update
 Comment=Systray update notification
-Icon=software-update-available
+Icon=system-software-update
 Exec=bodhi-update
 Terminal=false
 Type=Application
