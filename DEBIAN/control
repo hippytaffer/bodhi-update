@@ -2,7 +2,7 @@ Package: bodhi-update
 Version: 0.3
 Architecture: all
 Priority: optional
-Depends: yad, xterm, apt
+Depends: yad, terminology, apt
 Suggests: apt-config-auto-update
 Section: x11
 Maintainer: Gareth Williams <hippytaff@bodhilinux.com>
