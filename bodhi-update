@@ -102,7 +102,7 @@ do
             echo "menu:Check for new updates!echo update|$MENU_TEMPLATE||$MENU_SHOW_NOUPDATE" >&3
 #            if [ $SHOW_NOUPDATES -eq 1 ]
 #            then
-#                echo "visible:true" >&3
+                echo "visible:true" >&3
 #            else
 #                echo "visible:false" >&3
 #            fi
@@ -119,6 +119,10 @@ do
         echo "tooltip:Checking for updates..." >&3
         echo "icon:$ICON_REFRESHING" >&3
 	terminology -e pkexec apt update
+        if [ $? -eq 0 ]
+        then
+            yad --title "Bodhi Update" --text "No updates available" --center --height 80 --width 225 --window-icon=system_section --button=Ok
+        fi
     elif [ " $command " == " upgrade " ]
     then
         echo "icon:$ICON_REFRESHING" >&3
